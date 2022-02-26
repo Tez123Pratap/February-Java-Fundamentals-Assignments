@@ -18,18 +18,20 @@ public class Assignment_2 {
 
 	    switch (choice) {
 	        case 1:
-	        	System.out.println("Enter a number:");
 	        	String Cont;
-	        	int num=sc.nextInt();
 	            do {
+	            	System.out.println("Enter a number:");
+	            	int num=sc.nextInt();
 	            	long fct=fact(num);
 	            	System.out.println("Factorial is:"+fct);
 	            	System.out.println("Do you want again calculate the factorial of a number(y for Yes and n for No):");
+	            	sc.nextLine();
 	            	Cont=sc.nextLine();
-	            	if(Cont=="n") {
+	            	if(Cont.equals("n")) {
+	            		System.out.println("Goodbye");
 	            		break;
 	            	}
-	            }while(Cont=="y");
+	            }while(Cont.equals("y"));
 	            break;
 	        case 2:
 	        	System.out.println("Goodbye");

@@ -10,8 +10,14 @@ public class Assignment_2 {
 		for(int i=0;i<arr.length;i++) {
 			arr[i]=sc.nextInt();
 		}
-		int middle=arr.length/2;
-		System.out.println("The middle element is "+middle);
+		
+		for(int i=0;i<arr.length;i++) {
+		
+			if(i==((arr.length/2)-1)) {
+				System.out.println("The middle element is "+arr[i]);
+				break;
+			}
+		}
 	}
 
 }
